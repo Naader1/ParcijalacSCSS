@@ -1,0 +1,86 @@
+$color_1: rgb(255, 255, 255);
+$font-family_1: Tahoma, sans-serif;
+$background-color_1: rgba(0, 255, 255, 0.327);
+$background-color_2: rgba(137, 43, 226, 0.138);
+$background-color_3: rgba(255, 0, 0, 0.127);
+
+@keyframes animacija1 {
+	from {
+		top: -500px;
+	}
+	to {
+		top: 300px;
+	}
+}
+@keyframes animacija2 {
+	from {
+		top: -1000px;
+	}
+	to {
+		top: 300px;
+	}
+}
+@keyframes animacija3 {
+	from {
+		top: -1000px;
+	}
+	to {
+		top: 300px;
+	}
+}
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background-image: url("blur-clean.jpg");
+	padding: 0;
+	margin: 0;
+	font-family: $font-family_1;
+	font-size: 30px;
+	color: $color_1;
+}
+.wrapper {
+	div {
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		display: inline-block;
+		font-size: 6em;
+		line-height: 100px;
+		width: 500px;
+		height: 500px;
+		margin: 70px;
+		text-align: center;
+		position: relative;
+		padding-top: 100px;
+	}
+}
+div {
+	.c {
+		background-color: $background-color_1;
+		width: 350px;
+		height: 350px;
+		position: relative;
+		animation-name: animacija1;
+		animation-duration: 3s;
+		animation-fill-mode: forwards;
+	}
+	.S {
+		background-color: $background-color_2;
+		width: 350px;
+		height: 350px;
+		position: relative;
+		animation-name: animacija2;
+		animation-duration: 5s;
+		animation-fill-mode: forwards;
+	}
+	.Se {
+		background-color: $background-color_3;
+		width: 350px;
+		height: 350px;
+		position: relative;
+		animation-name: animacija3;
+		animation-duration: 7s;
+		animation-fill-mode: forwards;
+	}
+}
